@@ -1,3 +1,6 @@
+import './firebase';
+import './services/note-service.js';
+
 import PrimeVue from 'primevue/config';
 import 'primeflex/primeflex.min.css';
 import 'primevue/resources/themes/arya-orange/theme.css';
