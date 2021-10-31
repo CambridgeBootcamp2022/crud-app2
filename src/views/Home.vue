@@ -2,6 +2,7 @@
     <div>
         <div class="flex justify-content-end pr-4 pt-4">
             <Button @click="showAddNote" label="Add Note" icon="fas fa-plus" />
+            <Button @click="logout" label="Log out" class="p-button-link"></Button>
         </div>
         <div class="flex flex-column lg:flex-row text-800 p-4">
             <Notes />
@@ -29,6 +30,7 @@
 
 <script>
 import Notes from '../components/Notes.vue';
+import authService from '../services/auth-service';
 import noteService from '../services/note-service.js';
 
 export default {
@@ -59,6 +61,10 @@ export default {
             noteService.addNote(this.note);
             this.display = false;
             this.$store.commit('getAllNotes');
+        },
+        async logout() {
+            await authService.logout();
+            this.$router.replace({ name: 'Login' });
         }
     }
 }
