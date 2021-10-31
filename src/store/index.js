@@ -8,10 +8,11 @@ export default createStore({
     },
     mutations: {
         async getAllNotes(state) {
+            state.notes = [];
             const notesSnapshot = await noteService.findAll();
             notesSnapshot.forEach((doc) => {
                 const data = doc.data();
-
+                console.log(data);
                 state.notes.push({
                     id: doc.id,
                     title: data.title,
