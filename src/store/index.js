@@ -10,9 +10,12 @@ export default createStore({
         async getAllNotes(state) {
             const notesSnapshot = await noteService.findAll();
             notesSnapshot.forEach((doc) => {
+                const data = doc.data();
+
                 state.notes.push({
                     id: doc.id,
-                    note: doc.data().note,
+                    title: data.title,
+                    note: data.note,
                 });
             });
         }

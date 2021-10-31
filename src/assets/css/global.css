@@ -1,6 +1,8 @@
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css';
+
 body {
     font-family: var(--font-family), serif;
-    background-color: var(--surface-0);
+    background-color: var(--surface-100);
     margin: 0;
     padding: 0;
     height: 100vh;

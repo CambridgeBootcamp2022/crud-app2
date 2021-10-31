@@ -3,7 +3,7 @@ import './services/note-service.js';
 
 import PrimeVue from 'primevue/config';
 import 'primeflex/primeflex.min.css';
-import 'primevue/resources/themes/arya-orange/theme.css';
+import 'primevue/resources/themes/vela-orange/theme.css';
 import 'primevue/resources/primevue.min.css';
 import 'primeicons/primeicons.css';
 import './assets/css/global.css';
