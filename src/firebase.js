@@ -1,14 +1,14 @@
-import { initializeApp } from "firebase/app";
+import { initializeApp } from 'firebase/app'
 
 const firebaseConfig = {
-  apiKey: "AIzaSyClZUeM9Q8WhiXGE1m-MXauGHnhW3670rg",
-  authDomain: "groundgurusdemo.firebaseapp.com",
-  projectId: "groundgurusdemo",
-  storageBucket: "groundgurusdemo.appspot.com",
-  messagingSenderId: "45653986509",
-  appId: "1:45653986509:web:f6295ab262c3313847ed84"
-};
+  apiKey: 'AIzaSyCpIdXw3as5bHc59QyNgL-zsn7FDA8wk18',
+  authDomain: 'my-notes-3-42aa3.firebaseapp.com',
+  projectId: 'my-notes-3-42aa3',
+  storageBucket: 'my-notes-3-42aa3.appspot.com',
+  messagingSenderId: '34960586749',
+  appId: '1:34960586749:web:aba7f369c2a835b58b4b94',
+}
 
-const app = initializeApp(firebaseConfig);
+const app = initializeApp(firebaseConfig)
 
-export default app;
+export default app
